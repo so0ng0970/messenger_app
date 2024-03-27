@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_app/common/screen/home_screen.dart';
 import 'package:messenger_app/common/screen/splash_screen.dart';
 
 void main() {
