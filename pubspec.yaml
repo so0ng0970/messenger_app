@@ -73,6 +73,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: DOSIyagi
+      fonts:
+        - asset: assets/fonts/DOSIyagiBoldface.ttf
     - family: PPMori
       fonts:
         - asset: assets/fonts/PPMori-SemiBold.otf

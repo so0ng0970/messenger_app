@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:messenger_app/common/screen/home_screen.dart';
+import 'package:messenger_app/const/color.dart';
+import 'package:messenger_app/user/screen/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,23 +18,22 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     Timer(
         const Duration(
-          seconds: 3,
+          seconds: 5,
         ), () {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => const LoginScreen(),
         ),
       );
     });
-    super.initState();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 0, 102, 255),
+      backgroundColor: SPLASH_BG_COLOR,
       body: Stack(
         children: [
           Positioned.fill(
